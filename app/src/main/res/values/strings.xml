@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Oronator</string>
+    <string name="maybe_yes">たぶんそう 部分的にそう</string>
+    <string name="meybe_no">たぶん違う そうでもない</string>
+    <string name="yes">はい</string>
+    <string name="not_sure">分からない</string>
+    <string name="no">いいえ</string>
+    <string-array name="questions">
+        <item>プログラミングスキルを\n身につけたい？</item>
+        <item>DTMをしたい？</item>
+        <item>情報科学の発展に寄与したい？</item>
+        <item>プレゼン上達したい？</item>
+        <item>サイクリングが好き？</item>
+        <item>もうめんどくさいから\n「はい」押して</item>
+
+    </string-array>
+</resources>

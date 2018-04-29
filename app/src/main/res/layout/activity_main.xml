@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diesen.oronator.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ororo" />
+
+        <LinearLayout
+            android:id="@+id/white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/tableLayout"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView"
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:background="#bbffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_question"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:id="@+id/tableLayout">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/Button1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_stateful"
+                    android:contentDescription="@string/maybe_yes"
+                    android:padding="5dp"
+                    android:text="@string/maybe_yes"
+                    android:textAlignment="center"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/Button2"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_stateful"
+                    android:contentDescription="@string/meybe_no"
+                    android:padding="5dp"
+                    android:text="@string/meybe_no"
+                    android:textAlignment="center"
+                    android:textColor="#fff" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/Button3"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_stateful"
+                    android:contentDescription="@string/yes"
+                    android:text="@string/yes"
+                    android:textAlignment="center"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/Button4"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_stateful"
+                    android:contentDescription="@string/not_sure"
+                    android:text="@string/not_sure"
+                    android:textAlignment="center"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/Button5"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_stateful"
+                    android:contentDescription="@string/no"
+                    android:text="@string/no"
+                    android:textAlignment="center"
+                    android:textColor="#fff" />
+            </TableRow>
+
+        </TableLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
