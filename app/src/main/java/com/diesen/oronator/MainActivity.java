@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button button4;
     private Button button5;
 
-    private Button button_return;
-
     private LinearLayout white_box;
     private TextView view_num;
     private TextView view_question;
